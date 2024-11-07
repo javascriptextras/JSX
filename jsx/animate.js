@@ -20,7 +20,8 @@ export function hide(id) {
   }
 }
 
-export function show(id) {
+export function show(id, message) {
+  console.log(message);
   const element = document.getElementById(id);
   if (element) {
     element.style.display = 'block';
