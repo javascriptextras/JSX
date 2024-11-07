@@ -16,3 +16,12 @@ export function addHTML(parentId, html) {
     parentElement.appendChild(children[i]);
   }
 }
+
+export function removeElement(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.parentNode.removeChild(element);
+  } else {
+    console.warn(`Element with ID '${id}' not found.`);
+  }
+}
