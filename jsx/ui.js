@@ -8,6 +8,7 @@ export function createButton(text, onClick, id, parentId) {
   button.id = id;
 
   if (typeof onClick === 'function') {
+    console.log(onClick + " added");
     button.addEventListener('click', onClick);
   }
 
