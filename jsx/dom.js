@@ -17,11 +17,15 @@ export function addHTML(parentId, html) {
   }
 }
 
-export function removeElement(id) {
+export function removeHTML(id) {
   const element = document.getElementById(id);
   if (element) {
     element.parentNode.removeChild(element);
   } else {
     console.warn(`Element with ID '${id}' not found.`);
   }
+}
+
+export function removeATTRIB(id, attrib) {
+  document.getElementById(ID)[ATTRIB] = "";
 }
